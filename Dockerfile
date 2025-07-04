@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built jar file into the container
-COPY spring-boot-crud-rest-1.1.0.jar app.jar
+COPY target/spring-boot-crud-rest-1.1.0.jar app.jar
 
 # Expose the application port
 EXPOSE 8080
